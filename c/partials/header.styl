@@ -1,0 +1,36 @@
+header.site
+  bt 3px solid link
+  bb 1px solid #ddd
+  m 0 0 3em
+  nav
+    cnt()
+    ul
+      clearfix()
+      li
+        &.branding
+          col 4
+          h1 a
+            d block
+            f bold 2em/3 sans
+            ls -1px
+            c txt
+        &.login
+          col 8
+          p 1.5em 0 .75em cw*2
+          clearfix()
+          ul.fields
+            li.field
+              col 2
+              p 0 .5em
+              input[type=email], input[type=password]
+                w 100%
+              input[type=submit]
+                p 0 1.5em
+            li.link
+              p 0 x*.5
+              s 75%
+              lh x*1.5
+              a
+                c txt
+                &:hover
+                  c hover

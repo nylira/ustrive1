@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>New Project</title>
+  <title>uStrive</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
@@ -12,16 +12,168 @@
   <script src="js/script.js"></script>
 </head>
 
-<body>
+<body class="home index">
 
-<header>
-  <h1><a href="#">Clean Slate</a></h1>
+<header class="site">
+  <nav>
+    <ul>
+      <li class="branding">
+        <h1><a href="#">uStrive</a></h1>
+      <li class="login">
+        <form class="login">
+          <ul class="fields">
+            <li class="field">
+              <input type="email" placeholder="Email">
+            <li class="field">
+              <input type="password" placeholder="Password">
+            <li class="field submit">
+              <input type="submit" value="Login">
+            <li class="field link">
+              <input type="checkbox">
+              <label>Keep me logged in</label>
+            <li class="field link">
+              <a href='#'>Forgot your password?</a>
+
+          </ul>
+        </form>
+    </ul>
+  </nav>
 </header>
 
-<div class="content">
-  <p>Hi!</p>
-</div>
+<div id="content">
 
-<footer>
-  <p>&copy; 2011 <a href="//nylira.com">Peng Zhong</a></p>
+<div id="main">
+<p class="tagline">uStrive suggests colleges based on your interests and qualifications as well as mentors to guide you through the application process.</p>
+
+<form class="signup">
+  <fieldset>
+    <legend>Get started now.</legend>
+    <ul class="rows">
+      <li class="row name">
+        <ul class="fields">
+          <li class="field firstname">
+            <label>First Name</label>
+            <input type="text">
+          <li class="field lastname">
+            <label>Last Name</label>
+            <input type="text">
+        </ul>
+      <li class="row address solo">
+        <label>Current Address</label>
+        <input type="text">
+      <li class="row location">
+        <ul class="fields">
+          <li class="field city">
+            <label>City</label>
+            <input type="text">
+          <li class="field state">
+            <label>State</label>
+            <select>
+              <option>IL</option>
+            </select>
+          <li class="field zipcode">
+            <label>Zipcode</label>
+            <input type="number">
+        </ul>
+      <li class="row race solo">
+        <label>Race/Ethnicity</label>
+        <select>
+          <option>African American, Non-Hispanic</option>
+        </select>
+      </ul>
+    </fieldset>
+    <fieldset>  
+      <legend>Academic Profile</legend>
+      <ul class="rows">
+        <li class="row hs">
+          <ul class="fields">
+            <li class="field school">
+              <label>High School</label>
+              <input type="text">
+            <li class="field year">
+              <label>Class Of</label>
+              <select>
+                <option>2012</option>
+              </select>
+            <li class="field gpa">
+              <label>GPA</label>
+              <input type="text">
+          </ul>
+        <li class="row sat">
+          <p>SAT Scores</p>
+          <ul class="fields">
+            <li class="field">
+              <label>Reading</label>
+              <input type="text">
+            <li class="field">
+              <label>Math</label>
+              <input type="text">
+            <li class="field">
+              <label>Writing</label>
+              <input type="text">
+          </ul>
+        <li class="row act">
+          <p>ACT Scores</p>
+          <ul class="fields">
+            <li class="field">
+              <label>Reading</label>
+              <input type="text">
+            <li class="field">
+              <label>English</label>
+              <input type="text">
+            <li class="field">
+              <label>Math</label>
+              <input type="text">
+            <li class="field">
+              <label>Science</label>
+              <input type="text">
+            <li class="field">
+              <label>Writing</label>
+              <input type="text">
+          </ul>
+        <li class="row solo">
+          <label>Extracurricular Activities &amp; Interests</label>
+          <textarea></textarea>
+        <li class="row solo">
+          <label>Intended Field of Study</label>
+          <select>
+            <option>Undecided</option>
+          </select>
+        <li class="row distance">
+          <p>How far away do you want to be from home?</p>
+          <ul class="radio">
+            <li>
+              <input type="radio" name="distance">
+              <label>Local</label>
+            <li>
+              <input type="radio" name="distance">
+              <label>In-State</label>
+            <li>
+              <input type="radio" name="distance">
+              <label>Regional</label>
+            <li>
+              <input type="radio" name="distance">
+              <label>Anywhere in the U.S.</label>
+          </ul>
+        <li class="row submit">
+          <input type="submit" value="See Suggestions">
+      </ul>
+    </fieldset>
+  </form>
+</div><!--main-->
+            
+<div id="sidebar">
+  <a class="mentor signup">Sign up to be a mentor &rarr;</a>
+  <ul class="faces">
+    <li>Face
+    <li>Face
+    <li>Face
+    <li>Face
+  </ul>
+</div><!--sidebar-->
+
+</div><!--content-->
+
+<footer class="site">
+  <p>&copy; 2011 <a href="//nylira.com">uStrive</a></p>
 </footer>

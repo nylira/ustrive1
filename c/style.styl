@@ -1,7 +1,7 @@
-@import 'n/index'
-@import 'm/all'
-
 x = 14px
+txt = #222
+dim = #999
+hl = hsl(25,100,50)
 
 df()
   s x
@@ -9,28 +9,36 @@ df()
   ff sans
   c #333
 
-link = #0be
-hover = #0cf
+lhue = 23
+link = hsl(lhue,100,50)
+hover = hsl(lhue,100,60)
 
-a
+@import 'n/index'
+@import 'm/all'
+
+anchor()
   c link
   td none
   &:hover, &:focus
     c hover
 
-html
-  height 100%
+a
+  anchor()
 
 body
   df()
   bg #fff
-  oy scroll
 
-  .content
-    w 200px
-    h 100px
-    m 0 auto
-    bg #f00
-    s x*4
-    bz 5px #000 #f00 #0f0 #00f
-    abs top 20px right 20px
+  #content
+    cnt()
+
+  #main
+    col 8
+
+  #sidebar
+    col 4
+    p 0 x*3
+
+@import 'partials/header'
+@import 'partials/footer'
+@import 'sections/index'

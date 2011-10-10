@@ -24,28 +24,32 @@ span.amp
 
 button()
   d inline-block
-  b 1px solid b40
-  br 3px
-  cursor pointer
   p 0 .7em
   df()
-  lh m*2px - 3px
+  lh x*2 - 2px
+  c #fff
+  ta center
+  aa()
   ts b50 0 0 5px
-  background linear-gradient(top, m70 0%, m55 100%)
+  bg hsl(lhue,100,40)
+  background linear-gradient(top, hsl(lhue,100,50), hsl(lhue,100,30))
   bs inset w10 0 0 3px, w8 0 1px 0
-  c txt
+  b 1px solid link
+  border-radius 4px
+  box-shadow inset w75 0 0 1px, w8 0 1px 0
+  cursor pointer
   &:hover, &:focus
-    background linear-gradient(top, m75 0%, m65 100%)
+    c #fff
+    bg hsl(lhue,100,45)
+    background linear-gradient(top, hsl(lhue,100,55), hsl(lhue,100,35))
   &:active
-    background linear-gradient(top, m50 0%, m65 100%)
-  &.disabled
-    cursor default
-    opacity .75
-    &:hover
-      background linear-gradient(top, m80 0%, m60 100%)
-  &[disabled]:active, &[disabled]:hover
-    background #EEEEEE
+    c #fff
+    bg hsl(lhue,100,50)
+    background linear-gradient(top, hsl(lhue,100,45), hsl(lhue,100,30) 45%)
 
+.button, input[type=submit], button
+  button()
+    
 ir()
   display block
   text-indent -999em
