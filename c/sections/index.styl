@@ -1,21 +1,3 @@
-input[type=text], input[type=password], input[type=number], input[type=email], textarea
-  df()
-  bt 1px solid #999
-  br 1px solid #bbb
-  bb 1px solid #ccc
-  bl 1px solid #aaa
-  p x*.25 - 1px .25em
-  box-sizing border-box
-  span 2
-  box-shadow inset b10 1px 1px 4px, #fff 0 1px 0
-  border-radius 3px
-
-input[type=text], input[type=password], input[type=number], input[type=email]
-  span 2
-
-textarea, select, input
-  m 0
-
 body.home.index
   #content
     p.tagline
@@ -72,9 +54,11 @@ body.home.index
         &.location, &.hs
           ul.fields
             li.field
-              &.city, &.school
+              &.address
+                w 75%
+              &.school
                 w 50%
-              &.state, &.year
+              &.year
                 w 25%
               &.zipcode, &.gpa
                 w 25%
