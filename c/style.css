@@ -122,7 +122,25 @@ body.users.new #content form.register fieldset.avatar{width:320px;float:left;-we
 body.users.new #content form.register fieldset.avatar .placeholder{width:240px;font:bold 2em "Helvetica Neue",Arial,Helvetica,sans-serif;color:#999;height:240px;line-height:240px;background:#fff;border:1px solid #ddd;margin:40px 40px 0 39px}
 body.users.new #content form.register fieldset.avatar a{line-height:2em}
 body.users.new #content form.register fieldset.details{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;width:638px;border-left:1px solid #ddd}
-body.user.home #content{color:#222}
+body.user.home .avatar{width:50px;float:left;}
+body.user.home .avatar .placeholder{height:50px;width:50px;background:rgba(0,0,0,0.04);border:1px solid #ddd;line-height:80px;text-align:center;color:#999}
+body.user.home #sidebar section{margin-bottom:3em;zoom:1;}
+body.user.home #sidebar section:before,body.user.home #sidebar section:after{content:"";display:table}
+body.user.home #sidebar section:after{clear:both}
+body.user.home #sidebar section header{margin-bottom:1.5em;}
+body.user.home #sidebar section header h2{text-transform:uppercase;color:#999}
+body.user.home #sidebar section.profile .text{width:270px;float:left;padding-left:.5em;}
+body.user.home #sidebar section.profile .text h2{font:1.5em/1.3 "Helvetica Neue",Arial,Helvetica,sans-serif}
+body.user.home #sidebar section.important-tasks ul.tasks{margin-bottom:1.5em}
+body.user.home #main section{border-top:1px solid #ddd;margin-bottom:3em;}
+body.user.home #main section header{zoom:1;margin-bottom:1.5em;}
+body.user.home #main section header:before,body.user.home #main section header:after{content:"";display:table}
+body.user.home #main section header:after{clear:both}
+body.user.home #main section header h2{color:#999;text-transform:uppercase;line-height:2em;padding-left:3px}
+body.user.home #main section .content ul li{zoom:1;margin:0 0 1em;}
+body.user.home #main section .content ul li:before,body.user.home #main section .content ul li:after{content:"";display:table}
+body.user.home #main section .content ul li:after{clear:both}
+body.user.home #main section .content ul li .content{width:590px;float:left;padding:0 160px 0 .5em}
 body.results.index #content ul.results li.result{zoom:1;margin-bottom:1.5em;}
 body.results.index #content ul.results li.result:before,body.results.index #content ul.results li.result:after{content:"";display:table}
 body.results.index #content ul.results li.result:after{clear:both}

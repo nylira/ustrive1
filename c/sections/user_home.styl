@@ -1,3 +1,53 @@
 body.user.home
-  #content
-    c txt
+  .avatar
+    w 50px
+    float left
+    .placeholder
+      r 50px
+      bg b4
+      b 1px solid #ddd
+      lh cw
+      ta center
+      c dim
+
+  #sidebar
+    section
+      mb 3em
+      clearfix()
+      header
+        mb 1.5em
+        h2
+          tt uppercase
+          c dim
+      &.profile
+        .text
+          w cw*4 - 50px
+          float left
+          pl .5em
+          h2
+            f 1.5em/1.3 sans
+      &.important-tasks
+        ul.tasks
+          mb 1.5em
+
+  #main
+    section
+      bt 1px solid #ddd
+      mb 3em
+      header
+        clearfix()
+        mb 1.5em
+        h2
+          c dim
+          tt uppercase
+          lh 2em
+          pl 3px
+      .content
+        ul
+          li
+            clearfix()
+            m 0 0 1em
+            .content
+              w cw*8 - 50px
+              float left
+              p 0 cw*2 0 .5em
