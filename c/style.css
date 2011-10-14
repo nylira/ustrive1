@@ -29,7 +29,7 @@ body #content:before,body #content:after{content:"";display:table}
 body #content:after{clear:both}
 body #content p.tagline{font:2em "Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 1.5em}
 body #main{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
-body #sidebar{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0 42px}
+body #sidebar{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
 input[type=text],input[type=password],input[type=number],input[type=email],textarea{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;border-top:1px solid #999;border-right:1px solid #bbb;border-bottom:1px solid #ccc;border-left:1px solid #aaa;padding:2.5px .25em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:160px;-webkit-box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;-moz-box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 input[type=text],input[type=password],input[type=number],input[type=email]{width:160px}
 textarea,select,input{margin:0}
@@ -50,11 +50,11 @@ textarea,select,input{margin:0}
 #content ul.rows li.row.checkbox{padding:.5em 1em 1em;}
 #content ul.rows li.row.checkbox input[type=checkbox]{vertical-align:-4px}
 #content ul.rows li.row.checkbox label{display:inline}
-#content ul.rows li.row.location ul.fields li.field.address,#content ul.rows li.row.hs ul.fields li.field.address{width:75%}
-#content ul.rows li.row.location ul.fields li.field.school,#content ul.rows li.row.hs ul.fields li.field.school{width:50%}
-#content ul.rows li.row.location ul.fields li.field.year,#content ul.rows li.row.hs ul.fields li.field.year{width:25%}
-#content ul.rows li.row.location ul.fields li.field.zipcode,#content ul.rows li.row.hs ul.fields li.field.zipcode,#content ul.rows li.row.location ul.fields li.field.gpa,#content ul.rows li.row.hs ul.fields li.field.gpa{width:25%}
-#content ul.rows li.row.location ul.fields li.field input,#content ul.rows li.row.hs ul.fields li.field input,#content ul.rows li.row.location ul.fields li.field select,#content ul.rows li.row.hs ul.fields li.field select{width:100%}
+#content ul.rows li.row.data ul.fields li.field.race,#content ul.rows li.row.hs ul.fields li.field.race{width:75%}
+#content ul.rows li.row.data ul.fields li.field.school,#content ul.rows li.row.hs ul.fields li.field.school{width:50%}
+#content ul.rows li.row.data ul.fields li.field.year,#content ul.rows li.row.hs ul.fields li.field.year{width:25%}
+#content ul.rows li.row.data ul.fields li.field.zipcode,#content ul.rows li.row.hs ul.fields li.field.zipcode,#content ul.rows li.row.data ul.fields li.field.gpa,#content ul.rows li.row.hs ul.fields li.field.gpa{width:25%}
+#content ul.rows li.row.data ul.fields li.field input,#content ul.rows li.row.hs ul.fields li.field input,#content ul.rows li.row.data ul.fields li.field select,#content ul.rows li.row.hs ul.fields li.field select{width:100%}
 #content ul.rows li.row.act p,#content ul.rows li.row.sat p{width:152px;float:left;padding:0 7px;line-height:2em}
 #content ul.rows li.row.act ul.fields,#content ul.rows li.row.sat ul.fields{width:472px;float:left;}
 #content ul.rows li.row.act ul.fields label,#content ul.rows li.row.sat ul.fields label{font-size:75%;color:#007fff}
@@ -109,8 +109,9 @@ header.site.logged-out ul li.login ul.fields li.link a:hover{color:#39f}
 footer.site{width:960px;margin:0 auto;zoom:1;border-top:1px solid #ddd;margin:3em auto;line-height:3em}
 footer.site:before,footer.site:after{content:"";display:table}
 footer.site:after{clear:both}
-body.home.index #content a.mentor,body.home.index #sidebar a.mentor{display:block;margin:0 0 42px;text-align:right}
-body.home.index #content ul.faces li,body.home.index #sidebar ul.faces li{font:bold 4em "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#bbb;-webkit-font-smoothing:antialiased;letter-spacing:-3px;width:236px;height:236px;line-height:236px;border:1px solid #ddd;background:#fafafa;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:0 0 42px}
+body.home.index #sidebar{padding-left:42px;}
+body.home.index #sidebar a.mentor{display:block;margin:0 0 42px;text-align:right}
+body.home.index #sidebar ul.faces li{font:bold 4em "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#bbb;-webkit-font-smoothing:antialiased;letter-spacing:-3px;width:236px;height:236px;line-height:236px;border:1px solid #ddd;background:#fafafa;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:0 0 42px}
 body.users.new #content form.register{zoom:1;}
 body.users.new #content form.register:before,body.users.new #content form.register:after{content:"";display:table}
 body.users.new #content form.register:after{clear:both}
@@ -121,6 +122,7 @@ body.users.new #content form.register fieldset.avatar{width:320px;float:left;-we
 body.users.new #content form.register fieldset.avatar .placeholder{width:240px;font:bold 2em "Helvetica Neue",Arial,Helvetica,sans-serif;color:#999;height:240px;line-height:240px;background:#fff;border:1px solid #ddd;margin:40px 40px 0 39px}
 body.users.new #content form.register fieldset.avatar a{line-height:2em}
 body.users.new #content form.register fieldset.details{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;width:638px;border-left:1px solid #ddd}
+body.user.home #content{color:#222}
 body.results.index #content ul.results li.result{zoom:1;margin-bottom:1.5em;}
 body.results.index #content ul.results li.result:before,body.results.index #content ul.results li.result:after{content:"";display:table}
 body.results.index #content ul.results li.result:after{clear:both}
