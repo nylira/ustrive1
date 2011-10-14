@@ -2,18 +2,63 @@ header.site
   bb 1px solid #ddd
   m 0 0 3em
   bg b4
+
   nav
     cnt()
+  &.logged-in
+    ul
+      li
+        float left
+        relative()
+        p 0 .25em
+        a
+          d block
+          &.icon
+            r 32px
+            border-radius 3px
+            b 1px solid #ddd
+            m 5px 0
+            &:active
+              bgc b4
+              bc #aaa
+            img
+              d block
+              r 24px
+              m 3px
+              opacity .75
+        &.active a.icon
+          bgc #fff
+
+        &.branding
+          col 2
+          img
+            h x*3
+        &.star
+          span.alerts
+            d block
+            absolute top 2px right -2px
+            s 70%
+            lhh x
+            w x
+            bg #f00
+            c #fff
+            ta center
+            border-radius x*.5
+        &.search
+          p .5em 1em
+          col 3
+          input[type=text]
+            border-radius 1em
+            pl .5em
+            w 100%
+          
+
+  &.logged-out
     ul
       clearfix()
       li
         &.branding
           col 4
-          h1 a
-            d block
-            f bold 2em/3 sans
-            ls -1px
-            c txt
         &.login
           col 8
           p 1.5em 0 .75em cw*2

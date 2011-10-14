@@ -1,0 +1,53 @@
+body.results.index
+  #content
+    ul.results
+      li.result
+        clearfix()
+        mb 1.5em
+        .avatar
+          col 2
+          .placeholder
+            bg b4
+            b 1px solid #ddd
+            r cw*2
+            ta center
+            c dim
+            f bold 2em sans
+            lh cw*2
+        .content
+          col 10
+          pl 1em
+          h2
+            f 2em/1.5 sans
+          .desc
+            m 0 cw 1.5em 0
+          ul.actions
+            clearfix()
+            li
+              float left
+              a
+                d block
+                lh 3em
+              &.proceed
+                a
+                  button()
+                
+              &.dismiss
+                float right
+                relative()
+                a
+                  c #f00
+                  &:before
+                    mr .3em
+                    r x
+                    lh x
+                    d inline-block
+                    content '\2212'
+                    fw bold
+                    ta center
+                    c #fff
+                    bg #f00
+                    b 1px solid #000
+                    border-radius 3px
+
+              
