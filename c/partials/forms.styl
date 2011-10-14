@@ -15,3 +15,124 @@ input[type=text], input[type=password], input[type=number], input[type=email]
 
 textarea, select, input
   m 0
+
+#content
+  form
+    bg b4
+    b 1px solid #ddd
+    border-radius 5px
+    fieldset
+      legend
+        d block
+        w 100%
+        f bold 115% sans
+        c link
+        m 0
+        p x
+        bg #fff
+        bb 1px solid #ddd
+        bt 1px solid #fff
+      &:first-of-type
+        legend
+          border-radius 4px 4px 0 0
+
+    label
+      lh x*2
+      d block
+    
+  form.signup
+    label, input
+      display block
+    select
+      m .4em 0
+
+  ul.rows
+    li.row
+      clearfix()
+      p .5em .5em 1em
+      bt 1px solid #fff
+      bb 1px solid #ddd
+      &.name
+        ul.fields
+          li.field
+            w 50%
+            input
+              w 100%
+      &.solo
+        p .5em 1em 1em
+        input, select, textarea
+          w 100%
+        textarea
+          h 9em
+      &.checkbox
+        p .5em 1em 1em
+        input[type=checkbox]
+          vertical-align -4px
+        label
+          d inline
+
+      &.location, &.hs
+        ul.fields
+          li.field
+            &.address
+              w 75%
+            &.school
+              w 50%
+            &.year
+              w 25%
+            &.zipcode, &.gpa
+              w 25%
+            input, select
+              w 100%
+
+      &.act, &.sat
+        p
+          w cw*2 - x*.5 - 1px
+          float left
+          p 0 x*.5
+          lh 2em
+        ul.fields
+          w cw*6 - x*.5 - 1px
+          float left
+          label
+            s 75%
+            c link
+          input
+            w 100%
+      &.sat
+        li.field
+          w 33.3333333%
+      &.act
+        li.field
+          w 20%
+      &.distance
+        p .5em 1em 1em
+        p
+          lh 2em
+        ul.radio
+          clearfix()
+          li
+            col 3
+            input[type=radio]
+              d inline
+            label
+              d inline
+      &.birthday.solo
+        p .5em .5em 1em
+        label
+          p 0 .5em
+        ul.fields
+          li.field
+            w 33%
+      &.submit
+        ml cw*2
+        input
+          span 4
+          f bold 1.25em/2.4 sans
+
+  ul.fields
+    clearfix()
+    li.field
+      float left
+      p 0 .5em
+

@@ -24,14 +24,60 @@ span.amp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,"serif";font-st
 a{color:#007fff;text-decoration:none;}
 a:hover,a:focus{color:#39f}
 body{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;background:#fff;}
-body #content{width:960px;margin:0 auto;zoom:1}
+body #content{width:960px;margin:0 auto;zoom:1;}
 body #content:before,body #content:after{content:"";display:table}
 body #content:after{clear:both}
+body #content p.tagline{font:2em "Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 1.5em}
 body #main{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
 body #sidebar{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0 42px}
 input[type=text],input[type=password],input[type=number],input[type=email],textarea{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;border-top:1px solid #999;border-right:1px solid #bbb;border-bottom:1px solid #ccc;border-left:1px solid #aaa;padding:2.5px .25em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:160px;-webkit-box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;-moz-box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;box-shadow:inset rgba(0,0,0,0.10) 1px 1px 4px,#fff 0 1px 0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 input[type=text],input[type=password],input[type=number],input[type=email]{width:160px}
 textarea,select,input{margin:0}
+#content form{background:rgba(0,0,0,0.04);border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+#content form fieldset legend{display:block;width:100%;font:bold 115% "Helvetica Neue",Arial,Helvetica,sans-serif;color:#007fff;margin:0;padding:14px;background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #fff}
+#content form fieldset:first-of-type legend{-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0}
+#content form label{line-height:28px;display:block}
+#content form.signup label,#content form.signup input{display:block}
+#content form.signup select{margin:.4em 0}
+#content ul.rows li.row{zoom:1;padding:.5em .5em 1em;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
+#content ul.rows li.row:before,#content ul.rows li.row:after{content:"";display:table}
+#content ul.rows li.row:after{clear:both}
+#content ul.rows li.row.name ul.fields li.field{width:50%;}
+#content ul.rows li.row.name ul.fields li.field input{width:100%}
+#content ul.rows li.row.solo{padding:.5em 1em 1em;}
+#content ul.rows li.row.solo input,#content ul.rows li.row.solo select,#content ul.rows li.row.solo textarea{width:100%}
+#content ul.rows li.row.solo textarea{height:9em}
+#content ul.rows li.row.checkbox{padding:.5em 1em 1em;}
+#content ul.rows li.row.checkbox input[type=checkbox]{vertical-align:-4px}
+#content ul.rows li.row.checkbox label{display:inline}
+#content ul.rows li.row.location ul.fields li.field.address,#content ul.rows li.row.hs ul.fields li.field.address{width:75%}
+#content ul.rows li.row.location ul.fields li.field.school,#content ul.rows li.row.hs ul.fields li.field.school{width:50%}
+#content ul.rows li.row.location ul.fields li.field.year,#content ul.rows li.row.hs ul.fields li.field.year{width:25%}
+#content ul.rows li.row.location ul.fields li.field.zipcode,#content ul.rows li.row.hs ul.fields li.field.zipcode,#content ul.rows li.row.location ul.fields li.field.gpa,#content ul.rows li.row.hs ul.fields li.field.gpa{width:25%}
+#content ul.rows li.row.location ul.fields li.field input,#content ul.rows li.row.hs ul.fields li.field input,#content ul.rows li.row.location ul.fields li.field select,#content ul.rows li.row.hs ul.fields li.field select{width:100%}
+#content ul.rows li.row.act p,#content ul.rows li.row.sat p{width:152px;float:left;padding:0 7px;line-height:2em}
+#content ul.rows li.row.act ul.fields,#content ul.rows li.row.sat ul.fields{width:472px;float:left;}
+#content ul.rows li.row.act ul.fields label,#content ul.rows li.row.sat ul.fields label{font-size:75%;color:#007fff}
+#content ul.rows li.row.act ul.fields input,#content ul.rows li.row.sat ul.fields input{width:100%}
+#content ul.rows li.row.sat li.field{width:33.3333333%}
+#content ul.rows li.row.act li.field{width:20%}
+#content ul.rows li.row.distance{padding:.5em 1em 1em;}
+#content ul.rows li.row.distance p{line-height:2em}
+#content ul.rows li.row.distance ul.radio{zoom:1;}
+#content ul.rows li.row.distance ul.radio:before,#content ul.rows li.row.distance ul.radio:after{content:"";display:table}
+#content ul.rows li.row.distance ul.radio:after{clear:both}
+#content ul.rows li.row.distance ul.radio li{width:240px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
+#content ul.rows li.row.distance ul.radio li input[type=radio]{display:inline}
+#content ul.rows li.row.distance ul.radio li label{display:inline}
+#content ul.rows li.row.birthday.solo{padding:.5em .5em 1em;}
+#content ul.rows li.row.birthday.solo label{padding:0 .5em}
+#content ul.rows li.row.birthday.solo ul.fields li.field{width:33%}
+#content ul.rows li.row.submit{margin-left:160px;}
+#content ul.rows li.row.submit input{width:320px;font:bold 1.25em/2.4 "Helvetica Neue",Arial,Helvetica,sans-serif}
+#content ul.fields{zoom:1;}
+#content ul.fields:before,#content ul.fields:after{content:"";display:table}
+#content ul.fields:after{clear:both}
+#content ul.fields li.field{float:left;padding:0 .5em}
 header.site{border-bottom:1px solid #ddd;margin:0 0 3em;background:rgba(0,0,0,0.04);}
 header.site nav{width:960px;margin:0 auto;zoom:1;}
 header.site nav:before,header.site nav:after{content:"";display:table}
@@ -53,45 +99,15 @@ header.site nav ul li.login ul.fields li.link a:hover{color:#39f}
 footer.site{width:960px;margin:0 auto;zoom:1;border-top:1px solid #ddd;margin:3em auto;line-height:3em}
 footer.site:before,footer.site:after{content:"";display:table}
 footer.site:after{clear:both}
-body.home.index #content p.tagline{font:2em "Helvetica Neue",Arial,Helvetica,sans-serif;margin:0 0 1.5em}
-body.home.index #content form{background:rgba(0,0,0,0.04);border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
-body.home.index #content form fieldset legend{display:block;width:100%;font:bold 115% "Helvetica Neue",Arial,Helvetica,sans-serif;color:#007fff;margin:0;padding:14px;background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #fff}
-body.home.index #content form fieldset:first-of-type legend{-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0}
-body.home.index #content form label{line-height:28px;display:block}
-body.home.index #content form.signup label,body.home.index #content form.signup input{display:block}
-body.home.index #content form.signup select{margin:.4em 0}
-body.home.index #content ul.rows li.row{zoom:1;padding:.5em .5em 1em;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
-body.home.index #content ul.rows li.row:before,body.home.index #content ul.rows li.row:after{content:"";display:table}
-body.home.index #content ul.rows li.row:after{clear:both}
-body.home.index #content ul.rows li.row.name ul.fields li.field{width:50%;}
-body.home.index #content ul.rows li.row.name ul.fields li.field input{width:100%}
-body.home.index #content ul.rows li.row.solo{padding:.5em 1em 1em;}
-body.home.index #content ul.rows li.row.solo input,body.home.index #content ul.rows li.row.solo select,body.home.index #content ul.rows li.row.solo textarea{width:100%}
-body.home.index #content ul.rows li.row.solo textarea{height:9em}
-body.home.index #content ul.rows li.row.location ul.fields li.field.address,body.home.index #content ul.rows li.row.hs ul.fields li.field.address{width:75%}
-body.home.index #content ul.rows li.row.location ul.fields li.field.school,body.home.index #content ul.rows li.row.hs ul.fields li.field.school{width:50%}
-body.home.index #content ul.rows li.row.location ul.fields li.field.year,body.home.index #content ul.rows li.row.hs ul.fields li.field.year{width:25%}
-body.home.index #content ul.rows li.row.location ul.fields li.field.zipcode,body.home.index #content ul.rows li.row.hs ul.fields li.field.zipcode,body.home.index #content ul.rows li.row.location ul.fields li.field.gpa,body.home.index #content ul.rows li.row.hs ul.fields li.field.gpa{width:25%}
-body.home.index #content ul.rows li.row.location ul.fields li.field input,body.home.index #content ul.rows li.row.hs ul.fields li.field input,body.home.index #content ul.rows li.row.location ul.fields li.field select,body.home.index #content ul.rows li.row.hs ul.fields li.field select{width:100%}
-body.home.index #content ul.rows li.row.act p,body.home.index #content ul.rows li.row.sat p{width:152px;float:left;padding:0 7px;line-height:2em}
-body.home.index #content ul.rows li.row.act ul.fields,body.home.index #content ul.rows li.row.sat ul.fields{width:472px;float:left;}
-body.home.index #content ul.rows li.row.act ul.fields label,body.home.index #content ul.rows li.row.sat ul.fields label{font-size:75%;color:#007fff}
-body.home.index #content ul.rows li.row.act ul.fields input,body.home.index #content ul.rows li.row.sat ul.fields input{width:100%}
-body.home.index #content ul.rows li.row.sat li.field{width:33.3333333%}
-body.home.index #content ul.rows li.row.act li.field{width:20%}
-body.home.index #content ul.rows li.row.distance{padding:.5em 1em 1em;}
-body.home.index #content ul.rows li.row.distance p{line-height:2em}
-body.home.index #content ul.rows li.row.distance ul.radio{zoom:1;}
-body.home.index #content ul.rows li.row.distance ul.radio:before,body.home.index #content ul.rows li.row.distance ul.radio:after{content:"";display:table}
-body.home.index #content ul.rows li.row.distance ul.radio:after{clear:both}
-body.home.index #content ul.rows li.row.distance ul.radio li{width:240px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
-body.home.index #content ul.rows li.row.distance ul.radio li input[type=radio]{display:inline}
-body.home.index #content ul.rows li.row.distance ul.radio li label{display:inline}
-body.home.index #content ul.rows li.row.submit{margin-left:160px;}
-body.home.index #content ul.rows li.row.submit input{width:320px;font:bold 1.25em/2.4 "Helvetica Neue",Arial,Helvetica,sans-serif}
-body.home.index #content ul.fields{zoom:1;}
-body.home.index #content ul.fields:before,body.home.index #content ul.fields:after{content:"";display:table}
-body.home.index #content ul.fields:after{clear:both}
-body.home.index #content ul.fields li.field{float:left;padding:0 .5em}
-body.home.index #sidebar a.mentor{display:block;margin:0 0 42px;text-align:right}
-body.home.index #sidebar ul.faces li{font:bold 4em "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#bbb;-webkit-font-smoothing:antialiased;letter-spacing:-3px;width:236px;height:236px;line-height:236px;border:1px solid #ddd;background:#fafafa;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:0 0 42px}
+body.home.index #content a.mentor,body.home.index #sidebar a.mentor{display:block;margin:0 0 42px;text-align:right}
+body.home.index #content ul.faces li,body.home.index #sidebar ul.faces li{font:bold 4em "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;color:#bbb;-webkit-font-smoothing:antialiased;letter-spacing:-3px;width:236px;height:236px;line-height:236px;border:1px solid #ddd;background:#fafafa;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin:0 0 42px}
+body.users.new #content form.register{zoom:1;}
+body.users.new #content form.register:before,body.users.new #content form.register:after{content:"";display:table}
+body.users.new #content form.register:after{clear:both}
+body.users.new #content form.register fieldset{zoom:1;}
+body.users.new #content form.register fieldset:before,body.users.new #content form.register fieldset:after{content:"";display:table}
+body.users.new #content form.register fieldset:after{clear:both}
+body.users.new #content form.register fieldset.avatar{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;text-align:center;width:319px;}
+body.users.new #content form.register fieldset.avatar .placeholder{width:240px;font:bold 2em "Helvetica Neue",Arial,Helvetica,sans-serif;color:#999;height:240px;line-height:240px;background:#fff;border:1px solid #ddd;margin:40px 40px 0 39px}
+body.users.new #content form.register fieldset.avatar a{line-height:2em}
+body.users.new #content form.register fieldset.details{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;width:638px;border-left:1px solid #ddd}
