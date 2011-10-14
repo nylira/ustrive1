@@ -35,6 +35,27 @@ body
       f 2em sans
       m 0 0 1.5em
 
+  .avatar-50
+    w 50px
+    float left
+    .placeholder
+      r 50px
+      bg b4
+      b 1px solid #ddd
+      lh cw
+      ta center
+      c dim
+
+  .avatar-160
+    col 2
+    .placeholder
+      r cw*2
+      bg b4
+      b 1px solid #ddd
+      lh cw*2
+      ta center
+      c dim
+
   #main
     col 8
     section
@@ -48,6 +69,15 @@ body
           tt uppercase
           lh 2em
           pl 3px
+      .content
+        ul.feed
+          li
+            clearfix()
+            m 0 0 1em
+            .content
+              w cw*8 - 50px
+              float left
+              p 0 cw*2 0 .5em
 
   #sidebar
     col 4
@@ -66,4 +96,5 @@ body
 @import 'sections/index'
 @import 'sections/user_new'
 @import 'sections/user_home'
+@import 'sections/user_show'
 @import 'sections/results'
