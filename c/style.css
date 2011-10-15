@@ -55,6 +55,8 @@ textarea,select,input{margin:0}
 #content form.complex fieldset legend{display:block;width:100%;font:bold 115% "Helvetica Neue",Arial,Helvetica,sans-serif;color:#007fff;margin:0;padding:14px;background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #fff}
 #content form.complex fieldset:first-of-type legend{-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0}
 #content form.complex label{line-height:28px;display:block}
+#content form.complex li.row.submit{margin-left:160px;}
+#content form.complex li.row.submit input{width:320px;font:bold 1.25em/2.4 "Helvetica Neue",Arial,Helvetica,sans-serif}
 #content form.signup label,#content form.signup input{display:block}
 #content form.signup select{margin:.4em 0}
 #content ul.rows li.row{zoom:1;padding:.5em .5em 1em;border-top:1px solid #fff;border-bottom:1px solid #ddd;}
@@ -90,8 +92,6 @@ textarea,select,input{margin:0}
 #content ul.rows li.row.birthday.solo{padding:.5em .5em 1em;}
 #content ul.rows li.row.birthday.solo label{padding:0 .5em}
 #content ul.rows li.row.birthday.solo ul.fields li.field{width:33%}
-#content ul.rows li.row.submit{margin-left:160px;}
-#content ul.rows li.row.submit input{width:320px;font:bold 1.25em/2.4 "Helvetica Neue",Arial,Helvetica,sans-serif}
 #content ul.fields{zoom:1;}
 #content ul.fields:before,#content ul.fields:after{content:"";display:table}
 #content ul.fields:after{clear:both}
@@ -183,10 +183,81 @@ body.links.index #content section header:before,body.links.index #content sectio
 body.links.index #content section header:after{clear:both}
 body.links.index #content section header h2{font:2em/2 "Helvetica Neue",Arial,Helvetica,sans-serif;width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0 21px}
 body.links.index #content section header form{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:14px 21px;}
-body.links.index #content section header form input{width:100%}
+body.links.index #content section header form input{width:100%;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em;padding-left:.5em}
 body.links.index #content section .content{padding:0 .5em 0 1.5em;}
 body.links.index #content section .content ul{zoom:1;}
 body.links.index #content section .content ul:before,body.links.index #content section .content ul:after{content:"";display:table}
 body.links.index #content section .content ul:after{clear:both}
 body.links.index #content section .content ul li{float:left;margin:0 1em 1em 0;}
 body.links.index #content section .content ul li a{display:block;width:141.333324px;height:141.333324px;line-height:141.333324px;background:rgba(0,0,0,0.04);border:1px solid #ddd;color:#999;font-weight:bold;text-align:center}
+body.messages.index #content{padding:0;}
+body.messages.index #content .message-form{background:#fff;-webkit-box-shadow:rgba(0,0,0,0.50) 0 0 2em;-moz-box-shadow:rgba(0,0,0,0.50) 0 0 2em;box-shadow:rgba(0,0,0,0.50) 0 0 2em;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:480px;position:absolute;top:200px;left:50%;margin-left:-240px;display:none;}
+body.messages.index #content .message-form header{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #e6e6e6));background:-webkit-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:-moz-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);border-top:1px solid #fff;border-bottom:1px solid #ccc;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;}
+body.messages.index #content .message-form header h2{line-height:2em;color:#666;text-shadow:#fff 0 1px 0;padding-left:1em}
+body.messages.index #content .message-form .content form ul.rows li.row{padding:1em;}
+body.messages.index #content .message-form .content form ul.rows li.row input[type=text],body.messages.index #content .message-form .content form ul.rows li.row textarea{width:100%}
+body.messages.index #content .message-form .content form ul.rows li.row textarea{height:9em}
+body.messages.index #content .message-form .content form ul.rows li.row.submit{padding-left:160px;}
+body.messages.index #content .message-form .content form ul.rows li.row.submit input[type=submit]{width:160px}
+body.messages.index #content header.inbox{border-bottom:1px solid #ddd;}
+body.messages.index #content header.inbox ul{zoom:1;}
+body.messages.index #content header.inbox ul:before,body.messages.index #content header.inbox ul:after{content:"";display:table}
+body.messages.index #content header.inbox ul:after{clear:both}
+body.messages.index #content header.inbox ul li{float:left;}
+body.messages.index #content header.inbox ul li a{display:inline-block;padding:0 .7em;font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;line-height:26px;color:#fff;text-align:center;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.50) 0 0 5px;background:#06c;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #007fff), color-stop(1, #004c99));background:-webkit-linear-gradient(top, #007fff 0%, #004c99 100%);background:-moz-linear-gradient(top, #007fff 0%, #004c99 100%);background:linear-gradient(top, #007fff 0%, #004c99 100%);-webkit-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;border:1px solid #007fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;cursor:pointer;margin:14px 0}
+body.messages.index #content header.inbox ul li a:hover,body.messages.index #content header.inbox ul li a:focus{color:#fff;background:#0073e6;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #1a8cff), color-stop(1, #0059b3));background:-webkit-linear-gradient(top, #1a8cff 0%, #0059b3 100%);background:-moz-linear-gradient(top, #1a8cff 0%, #0059b3 100%);background:linear-gradient(top, #1a8cff 0%, #0059b3 100%)}
+body.messages.index #content header.inbox ul li a:active{color:#fff;background:#007fff;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #0073e6), color-stop(0.45, #004c99));background:-webkit-linear-gradient(top, #0073e6 0%, #004c99 45%);background:-moz-linear-gradient(top, #0073e6 0%, #004c99 45%);background:linear-gradient(top, #0073e6 0%, #004c99 45%)}
+body.messages.index #content header.inbox ul li form{width:400px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:14px;}
+body.messages.index #content header.inbox ul li form input{width:100%;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em;padding-left:.5em}
+body.messages.index #content section.list.view{width:400px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;border-right:1px solid #ddd;}
+body.messages.index #content section.list.view header ul{zoom:1;}
+body.messages.index #content section.list.view header ul:before,body.messages.index #content section.list.view header ul:after{content:"";display:table}
+body.messages.index #content section.list.view header ul:after{clear:both}
+body.messages.index #content section.list.view header ul li{width:80px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
+body.messages.index #content section.list.view header ul li a{display:block;border-right:1px solid #ddd;text-align:center;background:#fff;line-height:2em;color:#999;}
+body.messages.index #content section.list.view header ul li a:hover{color:#007fff}
+body.messages.index #content section.list.view header ul li.drafts{width:79px;}
+body.messages.index #content section.list.view header ul li.drafts a{border-right:none}
+body.messages.index #content section.list.view header ul li.active a{font-weight:bold;color:#222;line-height:29px;margin-bottom:-1px}
+body.messages.index #content section.list.view .content ul.msgs li.msg{border-top:1px solid #ddd;}
+body.messages.index #content section.list.view .content ul.msgs li.msg a{display:block;zoom:1;padding:.5em 1em;color:#222;}
+body.messages.index #content section.list.view .content ul.msgs li.msg a:before,body.messages.index #content section.list.view .content ul.msgs li.msg a:after{content:"";display:table}
+body.messages.index #content section.list.view .content ul.msgs li.msg a:after{clear:both}
+body.messages.index #content section.list.view .content ul.msgs li.msg a:hover{background:#e5f2ff}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .avatar-50{padding-top:.5em}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content{float:left;width:321px;padding-left:1em;}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content .meta{zoom:1;}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content .meta:before,body.messages.index #content section.list.view .content ul.msgs li.msg a .content .meta:after{content:"";display:table}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content .meta:after{clear:both}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content .meta .title{font-weight:bold;float:left}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content .meta .time{float:right;color:#999;font-size:85%}
+body.messages.index #content section.list.view .content ul.msgs li.msg a .content .desc{font-size:85%}
+body.messages.index #content section.list.view footer{border-top:1px solid #ddd;}
+body.messages.index #content section.list.view footer ul.actions{zoom:1;padding:0 .5em;}
+body.messages.index #content section.list.view footer ul.actions:before,body.messages.index #content section.list.view footer ul.actions:after{content:"";display:table}
+body.messages.index #content section.list.view footer ul.actions:after{clear:both}
+body.messages.index #content section.list.view footer ul.actions li{float:left;margin-right:.5em;padding:.5em 0;}
+body.messages.index #content section.list.view footer ul.actions li form{background:rgba(0,0,0,0.04);border:1px solid #ddd;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;height:28px;width:28px}
+body.messages.index #content section.list.view footer ul.actions li a{display:inline-block;padding:0 .7em;font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;line-height:26px;color:#fff;text-align:center;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.50) 0 0 5px;background:#06c;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #007fff), color-stop(1, #004c99));background:-webkit-linear-gradient(top, #007fff 0%, #004c99 100%);background:-moz-linear-gradient(top, #007fff 0%, #004c99 100%);background:linear-gradient(top, #007fff 0%, #004c99 100%);-webkit-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.10) 0 0 3px,rgba(255,255,255,0.08) 0 1px 0;border:1px solid #007fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;-moz-box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;box-shadow:inset rgba(255,255,255,0.75) 0 0 1px,rgba(255,255,255,0.08) 0 1px 0;cursor:pointer;}
+body.messages.index #content section.list.view footer ul.actions li a:hover,body.messages.index #content section.list.view footer ul.actions li a:focus{color:#fff;background:#0073e6;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #1a8cff), color-stop(1, #0059b3));background:-webkit-linear-gradient(top, #1a8cff 0%, #0059b3 100%);background:-moz-linear-gradient(top, #1a8cff 0%, #0059b3 100%);background:linear-gradient(top, #1a8cff 0%, #0059b3 100%)}
+body.messages.index #content section.list.view footer ul.actions li a:active{color:#fff;background:#007fff;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #0073e6), color-stop(0.45, #004c99));background:-webkit-linear-gradient(top, #0073e6 0%, #004c99 45%);background:-moz-linear-gradient(top, #0073e6 0%, #004c99 45%);background:linear-gradient(top, #0073e6 0%, #004c99 45%)}
+body.messages.index #content section.single.view{width:560px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
+body.messages.index #content section.single.view header.subject h2{font:bold 1.25em "Helvetica Neue",Arial,Helvetica,sans-serif;line-height:56px;padding-left:14px}
+body.messages.index #content section.single.view .content ul.msgs li.msg{padding:1em;zoom:1;border-top:1px solid #ddd;}
+body.messages.index #content section.single.view .content ul.msgs li.msg:before,body.messages.index #content section.single.view .content ul.msgs li.msg:after{content:"";display:table}
+body.messages.index #content section.single.view .content ul.msgs li.msg:after{clear:both}
+body.messages.index #content section.single.view .content ul.msgs li.msg .avatar-50{padding-top:.5em}
+body.messages.index #content section.single.view .content ul.msgs li.msg .content{float:left;width:482px;padding-left:1em;}
+body.messages.index #content section.single.view .content ul.msgs li.msg .content .meta{zoom:1;}
+body.messages.index #content section.single.view .content ul.msgs li.msg .content .meta:before,body.messages.index #content section.single.view .content ul.msgs li.msg .content .meta:after{content:"";display:table}
+body.messages.index #content section.single.view .content ul.msgs li.msg .content .meta:after{clear:both}
+body.messages.index #content section.single.view .content ul.msgs li.msg .content .meta .author{font-size:125%;width:388px;float:left}
+body.messages.index #content section.single.view .content ul.msgs li.msg .content .meta .time{width:80px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;color:#999}
+body.messages.index #content section.single.view footer{border-top:1px solid #ddd;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #e6e6e6));background:-webkit-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:-moz-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);border-bottom:1px solid #ccc;}
+body.messages.index #content section.single.view footer:hover .message-form{display:block}
+body.messages.index #content section.single.view footer form ul.fields{zoom:1;padding:1em;}
+body.messages.index #content section.single.view footer form ul.fields:before,body.messages.index #content section.single.view footer form ul.fields:after{content:"";display:table}
+body.messages.index #content section.single.view footer form ul.fields:after{clear:both}
+body.messages.index #content section.single.view footer form ul.fields li.field{width:480px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;width:452px;padding:0 .5em 0 0;}
+body.messages.index #content section.single.view footer form ul.fields li.field.submit{width:80px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0}
+body.messages.index #content section.single.view footer form ul.fields li.field input{width:100%}

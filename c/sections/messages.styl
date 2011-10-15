@@ -1,0 +1,175 @@
+body.messages.index
+  #content
+    p 0
+
+    .message-form
+      bg #fff
+      box-shadow b50 0 0 2em
+      border-radius 5px
+      span 6
+      absolute top 200px left 50% 
+      ml -240px
+      d none
+      header
+        background linear-gradient(top, m240, m230)
+        bt 1px solid #fff
+        bb 1px solid #ccc
+        border-radius 4px 4px 0 0
+        h2
+          lh 2em
+          c #666
+          text-shadow #fff 0 1px 0
+          pl 1em
+      .content
+        form
+          ul.rows
+            li.row
+              p 1em
+              input[type=text], textarea
+                w 100%
+              textarea
+                h 9em
+              &.submit
+                pl cw*2
+                input[type=submit]
+                  w cw*2
+
+    header.inbox
+      bb 1px solid #ddd
+      ul
+        clearfix()
+        li
+          float left
+          a
+            button()
+            m x 0
+          form
+            col 5
+            p x
+            input
+              w 100%
+              border-radius 1em
+              pl .5em
+
+    section.list.view
+      col 5
+      br 1px solid #ddd
+      header
+        ul
+          clearfix()
+          li
+            col 1
+            a
+              d block
+              br 1px solid #ddd
+              ta center
+              bg #fff
+              lh 2em
+              c dim
+              &:hover
+                c link
+            &.drafts 
+              w cw - 1px
+              a
+                br none
+            &.active a
+              fw bold
+              c txt
+              lh x*2 + 1px
+              mb -1px
+              
+      .content
+        ul.msgs
+          li.msg
+            bt 1px solid #ddd
+            a
+              d block
+              clearfix()
+              p .5em 1em
+              c txt
+              &:hover
+                bg hsl(lhue,100,95)
+              .avatar-50
+                pt .5em
+              .content
+                float left
+                w cw*5 - 50px - x*2 - 1px
+                pl 1em
+                .meta
+                  clearfix()
+                  .title
+                    fw bold
+                    float left
+                  .time
+                    float right
+                    c dim
+                    s 85%
+                .desc
+                  s 85%
+      footer
+        bt 1px solid #ddd
+        ul.actions
+          clearfix()
+          p 0 .5em
+          li
+            float left
+            mr .5em
+            p .5em 0
+            form
+              bg b4
+              b 1px solid #ddd
+              border-radius 3px
+              r x*2
+    
+            a
+              button()
+            
+    section.single.view
+      col 7
+      header.subject
+        h2
+          f bold 1.25em sans
+          lh x*4
+          pl x
+      .content
+        ul.msgs
+          li.msg
+            p 1em
+            clearfix()
+            bt 1px solid #ddd
+            .avatar-50
+              pt .5em
+            .content
+              float left
+              w cw*7 - 50px - x*2
+              pl 1em
+              .meta
+                clearfix()
+                .author
+                  s 125%
+                  w cw*6 - 50px - x*3
+                  float left
+                .time
+                  col 1
+                  c dim
+            
+      footer
+        bt 1px solid #ddd
+        background linear-gradient(top, m240, m230)
+        bb 1px solid #ccc
+        &:hover
+          .message-form
+            d block
+        form
+          ul.fields
+            clearfix()
+            p 1em 
+            li.field
+              col 6
+              w cw*6 - x*2
+              p 0 .5em 0 0
+              &.submit
+                col 1
+                p 0
+              input
+                w 100%

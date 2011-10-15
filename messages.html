@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>uStrive</title>
+  <meta name="author" content="Peng Zhong">
+  <link rel="stylesheet" media="screen" href="c/style.css?v=1">
+<!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script> 
+  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script> 
+  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script> 
+  <script src="js/script.js"></script>
+-->
+</head>
+
+<body class="messages index">
+
+<header class="site logged-in">
+  <nav>
+    <ul>
+      <li class="branding">
+        <h1><a href="index.html"><img src="i/ustrivelogo.png" alt="uStrive home"></a></h1>
+      <li class="star"><a class="icon" href="results.html">
+        <img src="i/nav/star.svg" alt="Star">
+        <span class="alerts">10</span></a>
+      <li class="search"><form><input type="text" placeholder="Search&hellip;"></form>
+      <li class="home"><a class="icon" href="user_home.html"><img src="i/nav/home.svg" alt="Home"></a>
+      <li class="profile"><a class="icon" href="user_show.html"><img src="i/nav/profile.svg" alt="Profile"></a>
+      <li class="links"><a class="icon" href="links.html"><img src="i/nav/links.svg" alt="Links"></a>
+      <li class="active messages"><a class="icon" href="messages.html"><img src="i/nav/messages.svg" alt="Messages"></a>
+      <li class="settings"><a class="icon" href="settings.html"><img src="i/nav/settings.svg" alt="Settings"></a>
+    </ul>
+  </nav>
+</header>
+
+<div id="content">
+
+<header class="inbox">
+  <ul>
+    <li class="search"><form><input type="text" placeholder="Search messages&hellip;"></form>
+    <li class="compose"><a href="#">Compose</a>
+  </ul>
+</header>
+<section class="list view">
+  <header>
+    <ul class="folders">
+      <li class="active"><a href="#">Inbox</a>
+      <li><a href="#">Sent</a>
+      <li><a href="#">Archive</a>
+      <li><a href="#">Trash</a>
+      <li class="drafts"><a href="#">Drafts</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="msgs">
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <footer>
+    <ul class="actions">
+      <li><form><input type="checkbox"><label>&darr;</label></form>
+      <li><a href="#">Archive</a>
+      <li><a href="#">Trash</a>
+      <li><a href="#">Mark Read</a>
+      <li><a href="#">Mark Unread</a>
+    </ul>
+  </footer>
+</section>
+
+<section class="single view">
+  <header class="subject">
+    <h2>Subject line goes here.</h2>
+  </header>
+  <div class="content">
+    <ul class="msgs">
+      <li class="msg">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="author"><a href="#">Jeff Nelson</a></div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare, purus a fermentum ultricies, felis velit ultricies velit, in tempor erat diam non lorem. Morbi tempus est sed nisi suscipit in hendrerit augue ultrices. In orci mi, condimentum a condimentum quis, fermentum vel ligula. Pellentesque aliquet auctor metus quis vehicula. Nulla sit amet ipsum vel nibh porttitor fringilla. Vestibulum auctor hendrerit mattis. Cras accumsan tempor tincidunt.
+          </div>
+        </div>
+      <li class="msg">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="author"><a href="#">Jeff Nelson</a></div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare, purus a fermentum ultricies, felis velit ultricies velit, in tempor erat diam non lorem. Morbi tempus est sed nisi suscipit in hendrerit augue ultrices. In orci mi, condimentum a condimentum quis, fermentum vel ligula. Pellentesque aliquet auctor metus quis vehicula. Nulla sit amet ipsum vel nibh porttitor fringilla. Vestibulum auctor hendrerit mattis. Cras accumsan tempor tincidunt.
+          </div>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <form class="preview">
+      <ul class="fields">
+        <li class="field">
+          <input type="text" placeholder="Write a reply&hellip;">
+        <li class="field submit">
+          <input type="submit" value="Reply">
+      </ul>
+    </form>
+    <div class="message-form">
+      <header>
+        <h2>New Message</h2>
+      </header>
+      <div class="content">
+        <form>
+          <ul class="rows">
+            <li class="row to"><input type="text" placeholder="To&hellip;">
+            <li class="row subject"><input type="text" placeholder="Subject&hellip;">
+            <li class="row message"><textarea placeholder="Message&hellip;"></textarea>
+            <li class="row submit"><input type="submit" value="Send">
+          </ul>
+        </form>
+      </div>
+    </div>
+
+  </footer>
+</section>
+
+
+</div><!--content-->
+
+<footer class="site">
+  <p>&copy; 2011 <a href="//nylira.com">uStrive</a></p>
+</footer>
