@@ -1,7 +1,8 @@
 header.site
-  bb 1px solid #ddd
-  m 0 0 3em
-  bg b4
+  bb 1px solid #ccc
+  box-shadow #fff 0 1px 0
+  m 0 0 .5em
+  background linear-gradient(top, m240, m230)
 
   nav
     cnt()
@@ -27,12 +28,15 @@ header.site
               m 3px
               opacity .75
         &.active a.icon
-          bgc #fff
+          bc #bbb
+          background b10
+          box-shadow inset b10 0 0 5px
 
         &.branding
-          col 2
+          col 4
           img
-            h x*3
+            h x*2
+            m x*.5 0
         &.star
           span.alerts
             d block
@@ -46,7 +50,7 @@ header.site
             border-radius x*.5
         &.search
           p .5em 1em
-          col 3
+          col 4
           input[type=text]
             border-radius 1em
             pl .5em
@@ -59,6 +63,7 @@ header.site
       li
         &.branding
           col 4
+          p 24px 0
         &.login
           col 8
           p 1.5em 0 .75em cw*2

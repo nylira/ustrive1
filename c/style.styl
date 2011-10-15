@@ -26,10 +26,15 @@ a
 
 body
   df()
-  bg #fff
+  bg m242
 
   #content
     cnt()
+    w 962px
+    p 1.5em 0
+    bg #fff
+    b 1px solid #ddd
+    border-radius 5px
 
     p.tagline
       f 2em sans
@@ -58,6 +63,7 @@ body
 
   #main
     col 8
+    pr 1.5em
     section
       bt 1px solid #ddd
       mb 3em
@@ -75,7 +81,7 @@ body
             clearfix()
             m 0 0 1em
             .content
-              w cw*8 - 50px
+              w cw*8 - 50px - x*1.5
               float left
               p 0 cw*2 0 .5em
 
@@ -83,6 +89,7 @@ body
     col 4
     section
       mb 3em
+      pl 1.5em
       clearfix()
       header
         mb 1.5em

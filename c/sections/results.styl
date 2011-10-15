@@ -1,9 +1,11 @@
 body.results.index
   #content
     ul.results
+      p 0 1.5em
       li.result
         clearfix()
         mb 1.5em
+        relative()
         .avatar
           col 2
           .placeholder
@@ -16,6 +18,7 @@ body.results.index
             lh cw*2
         .content
           col 10
+          w cw*10 - x*3
           pl 1em
           h2
             f 2em/1.5 sans
@@ -33,21 +36,11 @@ body.results.index
                   button()
                 
               &.dismiss
-                float right
-                relative()
+                absolute top 0 left 0
+                m -2px 0 0 -2px
                 a
-                  c #f00
-                  &:before
-                    mr .3em
-                    r x
-                    lh x
-                    d inline-block
-                    content '\2212'
-                    fw bold
-                    ta center
-                    c #fff
-                    bg #f00
-                    b 1px solid #000
-                    border-radius 3px
-
-              
+                  d block
+                  bg #fff
+                  r x
+                  border-radius .75em
+                  b 1px solid txt

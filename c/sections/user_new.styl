@@ -1,5 +1,6 @@
 body.users.new
   #content
+    p 1.5em
     form.register
       clearfix()
       fieldset
@@ -7,7 +8,7 @@ body.users.new
         &.avatar
           col 4
           ta center
-          w cw*4 - 1px
+          w cw*4 - 1px - x*1.5
           .placeholder
             w cw*3
             f bold 2em sans
@@ -15,11 +16,11 @@ body.users.new
             lhh cw*3
             bg #fff
             b 1px solid #ddd
-            m cw*.5 cw*.5 0 cw*.5 - 1px
+            m cw*.5 cw*.5 - x*.75 0 cw*.5 - 1px - x*.75
           a
             lh 2em
   
         &.details
           col 8
-          w cw*8 - 2px
+          w cw*8 - 2px - x*1.5
           bl 1px solid #ddd
