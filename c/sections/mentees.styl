@@ -1,0 +1,101 @@
+body.mentees.index
+  #content
+    p 0
+
+    .label
+      fw bold
+      mb .75em
+
+    .bar
+      bg b4
+      b 1px solid #ddd
+      border-radius x*.75
+      relative()
+      h x*1.5
+      box-shadow inset b20 0 0 5px
+      .progress
+        absolute top 0 left 0
+        background linear-gradient(top, hsl(lhue,100,65), hsl(lhue,100,45))
+        border-radius x*.75 - 1px
+        h x*1.5 - 2px
+
+    section.list.view
+      col 4
+      br 1px solid #ddd
+      header
+        form.search
+          p x
+          input
+            w 100%
+            border-radius 1em
+            pl .5em
+
+      .content
+        ul
+          clearfix()
+          pl 1em
+          li
+            float left
+            r cw*(4/3) - x*.4
+            lh cw*(4/3)
+            p 0 1em 1em 0
+      
+            a
+              d block
+              h cw*(4/3) - x
+              bg b4
+              b 1px solid #ddd
+              c dim
+              fw bold
+              ta center
+            
+    section.single.view
+      col 8
+      header
+        bb 1px solid #ddd
+        clearfix()
+        p 0 cw*2 1em 1em
+
+        .id
+          clearfix()
+          p 1em 0
+          .name
+            float left
+            w cw*6 - 50px - x*2
+            f bold 1.5em/50px sans
+            pl x
+        menu
+          ul
+            clearfix()
+            li
+              mb 1em
+              &.action
+                float left
+                pr 1em
+                a
+                  button()
+
+      .content
+        p 1em cw*2 0 1em
+
+        h3
+          f 125%/1.5 sans
+          mb x*1.5
+
+        ul.stats
+
+          li.stat
+            mb 1.5em
+
+            
+            ul.charts
+              clearfix()
+              li.chart
+                col 2
+                bg b4
+                b 1px solid #ddd
+                lhh cw*2
+                m 0 1em 1em 0
+                ta center
+                c dim
+                fw bold
