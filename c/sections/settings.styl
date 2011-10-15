@@ -1,0 +1,20 @@
+body.settings.index
+  #content
+    p 1.5em
+    form.complex
+      d block
+
+      ul.rows
+        clearfix()
+        li.row
+          col 6
+          p .5em 1em 1em
+          w cw*6 - x*1.5 - 1px
+          &:nth-of-type(2n)
+            bl 1px solid #ddd
+          w cw*6 - x*1.5 - 2px
+          input[type=text]
+            w 100%
+          &.submit
+            pl cw*2 - x*1.5 - 1px
+            

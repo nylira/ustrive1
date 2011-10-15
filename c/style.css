@@ -261,3 +261,18 @@ body.messages.index #content section.single.view footer form ul.fields:after{cle
 body.messages.index #content section.single.view footer form ul.fields li.field{width:480px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;width:452px;padding:0 .5em 0 0;}
 body.messages.index #content section.single.view footer form ul.fields li.field.submit{width:80px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:0}
 body.messages.index #content section.single.view footer form ul.fields li.field input{width:100%}
+body.settings.index #content{padding:1.5em;}
+body.settings.index #content form.complex{display:block;}
+body.settings.index #content form.complex ul.rows{zoom:1;}
+body.settings.index #content form.complex ul.rows:before,body.settings.index #content form.complex ul.rows:after{content:"";display:table}
+body.settings.index #content form.complex ul.rows:after{clear:both}
+body.settings.index #content form.complex ul.rows li.row{width:480px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;padding:.5em 1em 1em;width:458px;width:457px;}
+body.settings.index #content form.complex ul.rows li.row:nth-of-type(2n){border-left:1px solid #ddd}
+body.settings.index #content form.complex ul.rows li.row input[type=text]{width:100%}
+body.settings.index #content form.complex ul.rows li.row.submit{padding-left:138px}
+body.tasks.show #content{display:block;}
+body.tasks.show #content form{width:480px;margin:0 240px;}
+body.tasks.show #content form ul.rows li.row{padding:.5em 1em 1em;}
+body.tasks.show #content form ul.rows li.row input[type=text],body.tasks.show #content form ul.rows li.row textarea{width:100%}
+body.tasks.show #content form ul.rows li.row textarea{height:9em}
+body.tasks.show #content form ul.rows li.row.submit{margin-left:80px}
