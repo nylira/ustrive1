@@ -10,16 +10,25 @@ body.messages.index
       absolute top 200px left 50% 
       ml -240px
       d none
+      &.visible
+        display block
+
       header
         background linear-gradient(top, m240, m230)
         bt 1px solid #fff
         bb 1px solid #ccc
         border-radius 4px 4px 0 0
-        h2
+        clearfix()
+        h2, a.compose
           lh 2em
           c #666
           text-shadow #fff 0 1px 0
-          pl 1em
+          p 0 1em
+        h2
+          float left
+        a.compose
+          d block
+          float right
       .content
         form
           ul.rows
@@ -38,138 +47,160 @@ body.messages.index
       bb 1px solid #ddd
       ul
         clearfix()
-        li
+        li.main
           float left
-          a
-            button()
+          a.button
             m x 0
-          form
-            col 5
-            p x
-            input
-              w 100%
-              border-radius 1em
-              pl .5em
+          &.search
+            form
+              col 5
+              p x
+              input
+                w 100%
+                border-radius 1em
+                pl .5em
 
     section.list.view
       col 5
       br 1px solid #ddd
-      header
-        ul
-          clearfix()
-          li
-            col 1
+      ul.folder-tabs
+        clearfix()
+        li.tab
+          col 1
+          a
+            d block
+            br 1px solid #ddd
+            ta center
+            bg #fff
+            lh 2em
+            c dim
+            &:hover
+              c link
+          &.drafts 
+            w cw - 1px
             a
-              d block
-              br 1px solid #ddd
-              ta center
-              bg #fff
-              lh 2em
-              c dim
-              &:hover
-                c link
-            &.drafts 
-              w cw - 1px
-              a
-                br none
-            &.active a
-              fw bold
-              c txt
-              lh x*2 + 1px
-              mb -1px
+              br none
+          &.ui-tabs-selected a
+            fw bold
+            c txt
+            lh x*2 + 1px
+            mb -1px
               
-      .content
-        ul.msgs
-          li.msg
-            bt 1px solid #ddd
-            a
-              d block
-              clearfix()
-              p .5em 1em
-              c txt
-              &:hover
-                bg hsl(lhue,100,95)
-              .avatar-50
-                pt .5em
-              .content
-                float left
-                w cw*5 - 50px - x*2 - 1px
-                pl 1em
-                .meta
-                  clearfix()
-                  .title
-                    fw bold
-                    float left
-                  .time
-                    float right
-                    c dim
-                    s 85%
-                .desc
-                  s 85%
-      footer
-        bt 1px solid #ddd
-        ul.actions
-          clearfix()
-          p 0 .5em
-          li
-            float left
-            mr .5em
-            p .5em 0
-            form
-              bg b4
-              b 1px solid #ddd
-              border-radius 3px
-              r x*2
-    
-            a
-              button()
-            
-    section.single.view
-      col 7
-      header.subject
-        h2
-          f bold 1.25em sans
-          lh x*4
-          pl x
-      .content
-        ul.msgs
-          li.msg
-            p 1em
+      .folder
+        d block
+        &.ui-tabs-hide
+          d none
+
+      ul.msgs
+        h 450px
+        overflow scroll
+
+        li.msg
+          bt 1px solid #ddd
+
+          &.empty
+            lh 450px
+            ta center
+
+          a
+            d block
             clearfix()
-            bt 1px solid #ddd
+            p .5em 0 .5em 1em
+            c txt
+            &:hover
+              bg hsl(lhue,100,95)
             .avatar-50
               pt .5em
             .content
               float left
-              w cw*7 - 50px - x*2
+              w cw*5 - 50px - x - 1px - 15px
               pl 1em
               .meta
                 clearfix()
-                .author
-                  s 125%
-                  w cw*6 - 50px - x*3
+                .title
+                  fw bold
                   float left
                 .time
-                  col 1
+                  float right
                   c dim
-            
-      footer
-        bt 1px solid #ddd
-        background linear-gradient(top, m240, m230)
-        bb 1px solid #ccc
-        &:hover
-          .message-form
-            d block
-        form
-          ul.fields
-            clearfix()
-            p 1em 
-            li.field
-              col 6
-              w cw*6 - x*2
-              p 0 .5em 0 0
-              &.submit
+                  s 85%
+              .desc
+                s 85%
+    footer
+      bt 1px solid #ddd
+      ul.actions
+        clearfix()
+        p 0 .5em
+        li
+          float left
+          mr .5em
+          p .5em 0
+          form
+            bg b4
+            b 1px solid #ccc
+            border-radius 3px
+            h x*2
+            lh x*2
+            p 0 .5em
+            c #666
+            label
+              pl .3em
+  
+          a
+            button()
+            p 0 .5em
+            background linear-gradient(top, m250, m240)
+            b 1px solid #ccc !important
+            text-shadow #fff 0 1px 0
+            c #666
+            &:hover
+              b 1px solid #ccc !important
+              background linear-gradient(top, m253, m243)
+              c #666
+          
+  section.single.view
+    col 7
+    header.subject
+      h2
+        f bold 1.25em sans
+        lh x*4
+        pl x
+    .content
+      ul.msgs
+        li.msg
+          p 1em
+          clearfix()
+          bt 1px solid #ddd
+          .avatar-50
+            pt .5em
+          .content
+            float left
+            w cw*7 - 50px - x*2
+            pl 1em
+            .meta
+              clearfix()
+              .author
+                s 125%
+                w cw*6 - 50px - x*3
+                float left
+              .time
                 col 1
-                p 0
-              input
-                w 100%
+                c dim
+            
+    footer
+      bt 1px solid #ddd
+      background linear-gradient(top, m240, m230)
+      bb 1px solid #ccc
+      form.preview
+        ul.fields
+          clearfix()
+          p 1em 
+          li.field
+            col 6
+            w cw*6 - x*2
+            p 0 .5em 0 0
+            &.submit
+              col 1
+              p 0
+            input
+              w 100%

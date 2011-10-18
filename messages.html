@@ -5,13 +5,6 @@
   <title>uStrive</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
-<!--
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
-  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script> 
-  <script src="js/script.js"></script>
--->
 </head>
 
 <body class="messages index">
@@ -38,21 +31,36 @@
 
 <header class="inbox">
   <ul>
-    <li class="search"><form><input type="text" placeholder="Search messages&hellip;"></form>
-    <li class="compose"><a href="#">Compose</a>
+    <li class="main search"><form><input type="text" placeholder="Search messages&hellip;"></form>
+    <li class="main compose">
+      <a id="compose" class="compose button" href="#">Compose</a>
+      <div id="composition-form" class="message-form">
+        <header>
+          <h2>New Message</h2>
+          <a class="compose" href="#">&times;</a>
+        </header>
+        <div class="content">
+          <form>
+            <ul class="rows">
+              <li class="row to"><input type="text" placeholder="To&hellip;">
+              <li class="row subject"><input type="text" placeholder="Subject&hellip;">
+              <li class="row message"><textarea placeholder="Message&hellip;"></textarea>
+              <li class="row submit"><input type="submit" value="Send">
+            </ul>
+          </form>
+        </div>
+      </div>
   </ul>
 </header>
-<section class="list view">
-  <header>
-    <ul class="folders">
-      <li class="active"><a href="#">Inbox</a>
-      <li><a href="#">Sent</a>
-      <li><a href="#">Archive</a>
-      <li><a href="#">Trash</a>
-      <li class="drafts"><a href="#">Drafts</a>
-    </ul>
-  </header>
-  <div class="content">
+<section id="folders" class="list view">
+  <ul class="folder-tabs">
+    <li class="ui-tabs-selected tab"><a href="#inbox-folder">Inbox</a>
+    <li class="tab"><a href="#sent-folder">Sent</a>
+    <li class="tab"><a href="#archive-folder">Archive</a>
+    <li class="tab"><a href="#trash-folder">Trash</a>
+    <li class="drafts tab"><a href="#drafts-folder">Drafts</a>
+  </ul>
+  <div id="inbox-folder" class="inbox folder">
     <ul class="msgs">
       <li class="msg"><a href="#">
         <div class="avatar-50"><div class="placeholder"></div></div>
@@ -74,6 +82,7 @@
           <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
         </div>
       </a>
+
       <li class="msg"><a href="#">
         <div class="avatar-50"><div class="placeholder"></div></div>
         <div class="content">
@@ -84,6 +93,18 @@
           <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
         </div>
       </a>
+
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+
       <li class="msg"><a href="#">
         <div class="avatar-50"><div class="placeholder"></div></div>
         <div class="content">
@@ -116,9 +137,107 @@
       </a>
     </ul>
   </div>
+  <div id="sent-folder" class="sent folder">
+    <ul class="msgs">
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Sent subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Sent subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Sent subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Sent subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <div id="archive-folder" class="archive folder">
+    <ul class="msgs">
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Archive subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Archive subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Archive subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+      <li class="msg"><a href="#">
+        <div class="avatar-50"><div class="placeholder"></div></div>
+        <div class="content">
+          <div class="meta">
+            <div class="title">Archive subject line goes here.</div>
+            <div class="time">Yesterday</div>
+          </div>
+          <div class="desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, iperdiet ut vivamus a, nam letctus at nuc. Quam euismod sem, sempter ut potent</div>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <div id="trash-folder" class="trash folder">
+    <ul class="msgs">
+      <li class="msg empty">There's nothing here!
+    </ul>
+  </div>
+  <div id="drafts-folder" class="drafts folder">
+    <ul class="msgs">
+      <li class="msg empty">There's nothing here!
+    </ul>
+  </div>
   <footer>
     <ul class="actions">
-      <li><form><input type="checkbox"><label>&darr;</label></form>
+      <li><form><input type="checkbox"><label>&#9660;</label></form>
       <li><a href="#">Archive</a>
       <li><a href="#">Trash</a>
       <li><a href="#">Mark Read</a>
@@ -164,28 +283,16 @@
           <input type="submit" value="Reply">
       </ul>
     </form>
-    <div class="message-form">
-      <header>
-        <h2>New Message</h2>
-      </header>
-      <div class="content">
-        <form>
-          <ul class="rows">
-            <li class="row to"><input type="text" placeholder="To&hellip;">
-            <li class="row subject"><input type="text" placeholder="Subject&hellip;">
-            <li class="row message"><textarea placeholder="Message&hellip;"></textarea>
-            <li class="row submit"><input type="submit" value="Send">
-          </ul>
-        </form>
-      </div>
-    </div>
-
   </footer>
 </section>
-
 
 </div><!--content-->
 
 <footer class="site">
   <p>&copy; 2011 <a href="//nylira.com">uStrive</a></p>
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="j/script.js"></script>
