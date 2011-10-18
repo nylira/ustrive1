@@ -1,4 +1,8 @@
 body.messages.index
+
+  .visible
+    display block
+
   #content
     p 0
 
@@ -10,8 +14,6 @@ body.messages.index
       absolute top 200px left 50% 
       ml -240px
       d none
-      &.visible
-        display block
 
       header
         background linear-gradient(top, m240, m230)
@@ -143,11 +145,39 @@ body.messages.index
             lh x*2
             p 0 .5em
             c #666
-            label
-              pl .3em
+            relative()
+            .menu
+              d inline-block
+              span.more
+                d block
+                cursor pointer
+                s 75%
+                &:hover
+                  c link
+              ul.more
+                d none
+                absolute bottom 2em left 0
+                border-radius 3px
+                bg #fff
+                box-shadow b30 0 0 1em
+                &.visible
+                  d block
+                li 
+                  float none
+                  p 0
+                  m 0
+                  &:first-of-type a
+                    border-radius 2px 2px 0 0
+                  &:last-of-type a
+                    border-radius 0 0 2px 2px
+                  a
+                    d block
+                    p 0 1em
+                    &:hover
+                      bg link
+                      c #fff
   
-          a
-            button()
+          a.button
             p 0 .5em
             background linear-gradient(top, m250, m240)
             b 1px solid #ccc !important
