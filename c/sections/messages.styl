@@ -92,14 +92,14 @@ body.messages.index
           d none
 
       ul.msgs
-        h 450px
+        h 540px
         overflow scroll
 
         li.msg
           bt 1px solid #ddd
 
           &.empty
-            lh 450px
+            lh 540px
             ta center
 
           a
@@ -107,7 +107,7 @@ body.messages.index
             clearfix()
             p .5em 0 .5em 1em
             c txt
-            &:hover
+            &:hover, &:active, &:focus
               bg hsl(lhue,100,95)
             .avatar-50
               pt .5em
@@ -153,7 +153,7 @@ body.messages.index
             b 1px solid #ccc !important
             text-shadow #fff 0 1px 0
             c #666
-            &:hover
+            &:hover, &:active
               b 1px solid #ccc !important
               background linear-gradient(top, m253, m243)
               c #666
@@ -202,5 +202,9 @@ body.messages.index
             &.submit
               col 1
               p 0
-            input
+            
+            textarea
+              h 2em
+              max-height 30em
+            textarea, input
               w 100%

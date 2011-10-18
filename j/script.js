@@ -3,3 +3,5 @@ $('a.compose').click(function (){
 });
 
 $('#folders').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+
+$('textarea.elastic').elastic();
