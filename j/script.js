@@ -1,6 +1,7 @@
 $('a.compose').click(function (){
   $('#composition-form').toggleClass('visible');
 });
+
 $('span.more').click(function (){
   $('ul.more').toggleClass('visible');
 });

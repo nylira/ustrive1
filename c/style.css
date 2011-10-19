@@ -193,6 +193,7 @@ body.links.index #content section .content ul li a{display:block;width:141.33332
 body.messages.index .visible{display:block}
 body.messages.index #content{padding:0;}
 body.messages.index #content .message-form{background:#fff;-webkit-box-shadow:rgba(0,0,0,0.50) 0 0 2em;-moz-box-shadow:rgba(0,0,0,0.50) 0 0 2em;box-shadow:rgba(0,0,0,0.50) 0 0 2em;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:480px;position:absolute;top:200px;left:50%;margin-left:-240px;display:none;}
+body.messages.index #content .message-form.visible{display:block}
 body.messages.index #content .message-form header{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #e6e6e6));background:-webkit-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:-moz-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);border-top:1px solid #fff;border-bottom:1px solid #ccc;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;zoom:1;}
 body.messages.index #content .message-form header:before,body.messages.index #content .message-form header:after{content:"";display:table}
 body.messages.index #content .message-form header:after{clear:both}
