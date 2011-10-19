@@ -228,6 +228,7 @@ body.messages.index #content section.list.view .folder.ui-tabs-hide{display:none
 body.messages.index #content section.list.view ul.msgs{height:540px;overflow:scroll;}
 body.messages.index #content section.list.view ul.msgs li.msg{border-top:1px solid #ddd;}
 body.messages.index #content section.list.view ul.msgs li.msg.empty{line-height:540px;text-align:center}
+body.messages.index #content section.list.view ul.msgs li.msg.selected a{background:#e5f2ff}
 body.messages.index #content section.list.view ul.msgs li.msg a{display:block;zoom:1;padding:.5em 0 .5em 1em;color:#222;}
 body.messages.index #content section.list.view ul.msgs li.msg a:before,body.messages.index #content section.list.view ul.msgs li.msg a:after{content:"";display:table}
 body.messages.index #content section.list.view ul.msgs li.msg a:after{clear:both}
