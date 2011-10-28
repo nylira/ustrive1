@@ -329,3 +329,31 @@ body.tasks.show #content form ul.rows li.row{padding:.5em 1em 1em;}
 body.tasks.show #content form ul.rows li.row input[type=text],body.tasks.show #content form ul.rows li.row textarea{width:100%}
 body.tasks.show #content form ul.rows li.row textarea{height:9em}
 body.tasks.show #content form ul.rows li.row.submit{margin-left:80px}
+body.uni.show #content{zoom:1;padding:0;}
+body.uni.show #content:before,body.uni.show #content:after{content:"";display:table}
+body.uni.show #content:after{clear:both}
+body.uni.show #content #admissions{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
+body.uni.show #content #admissions ul.admissions{padding:1em 0 0 1em;}
+body.uni.show #content #admissions ul.admissions li.admission{width:299px;float:left;margin:0 1em 1em 0;border:1px solid #ddd;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+body.uni.show #content #admissions ul.admissions li.admission header{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #e6e6e6));background:-webkit-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:-moz-linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);background:linear-gradient(top, #f0f0f0 0%, #e6e6e6 100%);border-top:1px solid #fff;border-bottom:1px solid #ddd;text-align:center;font:150%/2 "Helvetica Neue",Arial,Helvetica,sans-serif;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;text-shadow:#fff 0 1px 0;color:#666}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat{border-bottom:1px solid #eee;padding:.5em 1.5em;text-align:center;}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat span.value{font-weight:bold}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat span.value,body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat span.label{display:inline-block}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.acceptance{padding-bottom:.75em;}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.acceptance span.value{font:4em/1.2 "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-2px;display:block;text-align:center;}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.acceptance span.value.green{color:#0f0}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.acceptance span.value.orange{color:#f60}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.acceptance span.value.red{color:#f00}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.acceptance span.label{display:block;text-align:center}
+body.uni.show #content #admissions ul.admissions li.admission ul.stats li.stat.gpa{border-bottom:none}
+body.uni.show #content #sidebar{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;background:rgba(0,0,0,0.04);padding:1.5em 3em;}
+body.uni.show #content #sidebar header.profile{padding-bottom:1.5em;border-bottom:1px solid #ddd;}
+body.uni.show #content #sidebar header.profile .avatar-160{height:174px;width:174px;background:#fff;float:none;margin:0 auto;border:.5em solid #fff;}
+body.uni.show #content #sidebar header.profile .avatar-160 .placeholder{background:rgba(0,0,0,0.04)}
+body.uni.show #content #sidebar header.profile h2{font:bold 1.5em/1 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:1em 0 0;text-align:center}
+body.uni.show #content #sidebar header.profile h3{text-align:center;line-height:2em}
+body.uni.show #content #sidebar .sidebar.content{padding-top:.75em;border-top:1px solid #fff;}
+body.uni.show #content #sidebar .sidebar.content section{margin-bottom:1.5em;padding:0;}
+body.uni.show #content #sidebar .sidebar.content section header{margin-bottom:0;}
+body.uni.show #content #sidebar .sidebar.content section header h3{color:#999;font:bold 85%/3 "Helvetica Neue",Arial,Helvetica,sans-serif;text-transform:uppercase;text-shadow:#fff 0 1px 0;-webkit-font-smoothing:antialiased}
+body.uni.show #content #sidebar .sidebar.content section .content{font-size:85%}

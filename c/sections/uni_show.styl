@@ -1,0 +1,92 @@
+body.uni.show
+  #content
+    clearfix()
+    p 0
+
+    #admissions
+      col 8
+      ul.admissions
+        p 1em 0 0 1em
+        li.admission
+          w cw*4 - x*1.5
+          float left
+          m 0 1em 1em 0
+          b 1px solid #ddd
+          border-radius 5px
+          header
+            background linear-gradient(top, m240, m230)
+            bt 1px solid #fff
+            bb 1px solid #ddd
+            ta center
+            f 150%/2 sans
+            border-radius 4px 4px 0 0
+            text-shadow #fff 0 1px 0
+            c #666
+          ul.stats
+            li.stat
+              bb 1px solid #eee
+              p .5em 1.5em
+              ta center
+              span.value
+                fw bold
+              span.value, span.label
+                d inline-block
+                
+              &.acceptance
+                pb .75em
+                span.value
+                  f 4em/1.2 sans
+                  ls -2px
+                  d block
+                  ta center
+                  &.green
+                    c #0f0
+                  &.orange
+                    c #f60
+                  &.red
+                    c #f00
+                span.label
+                  d block
+                  ta center
+              &.gpa
+                bb none
+
+    #sidebar
+      col 4
+      bg b4
+      p 1.5em 3em
+      header.profile
+        pb 1.5em
+        bb 1px solid #ddd
+        .avatar-160
+          r 160px + x
+          bg #fff
+          float none
+          m 0 auto
+          b .5em solid #fff
+          .placeholder
+            bg b4
+        h2
+          f bold 1.5em/1 sans
+          p 1em 0 0
+          ta center
+        h3
+          ta center
+          lh 2em
+
+      .sidebar.content
+        pt .75em
+        bt 1px solid #fff
+        section
+          mb 1.5em
+          p 0
+          header
+            mb 0
+            h3
+              c dim
+              f bold 85%/3 sans
+              tt uppercase
+              text-shadow #fff 0 1px 0
+              aa()
+          .content
+            s 85%
